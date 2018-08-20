@@ -12,6 +12,11 @@ before_build:
 build_script:
   - dotnet build --no-restore -c Release
   - ps: nuget pack -properties version=$Env:APPVEYOR_BUILD_VERSION
+test_script:
+  - ps: |
+      cd test
+      dotnet test --no-restore -c Release
+      cd ../
 artifacts:
   - path: '**\*.nupkg'
     name: package
