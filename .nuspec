@@ -9,7 +9,7 @@
 		<projectUrl>https://github.com/bessgeor/ZeroORM</projectUrl>
 		<iconUrl>http://github.com/bessgeor/ZeroORM/raw/master/icon.png</iconUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<description>ZeroORM EFCore integration package</description>
+		<description>ZeroORM core package containing all of the data-dealing methods</description>
 		<dependencies>		
 			<dependency id="ZeroORM.Extensibility" version="1.0.1" />
 		</dependencies>
