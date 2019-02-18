@@ -11,6 +11,7 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>ZeroORM core package containing all of the data-dealing methods</description>
 		<dependencies>		
+			<dependency id="Hellbrick.Diagnostics" version="3.1.1" exclude="all" />
 			<dependency id="ZeroORM.Extensibility" version="1.0.1" />
 		</dependencies>
 	</metadata>
