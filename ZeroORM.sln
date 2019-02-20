@@ -20,6 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root_items", "root_items", 
 		Directory.Build.Props = Directory.Build.Props
 		icon.png = icon.png
 		LICENSE = LICENSE
+		NuGet.config = NuGet.config
 	EndProjectSection
 EndProject
 Global
