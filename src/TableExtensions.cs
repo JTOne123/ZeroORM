@@ -2,7 +2,7 @@
 
 namespace ZeroORM
 {
-	public static class TableExtensions
+	public static partial class TableExtensions
 	{
 		public static SqlBuilder UseTable<TEntity>( this SqlBuilder builder, out ITableMetadata<TEntity> table )
 		{
