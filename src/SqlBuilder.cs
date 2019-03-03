@@ -2,13 +2,13 @@
 
 namespace ZeroORM
 {
-	public sealed class SqlBuilder : ISqlBuilder
+	internal sealed class SqlBuilder : ISqlBuilder, IInternalSqlBuilder
 	{
 		private readonly IMetadataProvider _metadata;
 
 		public SqlBuilder( IMetadataProvider metadata )
 			=> _metadata = metadata;
 
-		IMetadataProvider ISqlBuilder.Metadata => _metadata;
+		IMetadataProvider IInternalSqlBuilder.Metadata => _metadata;
 	}
 }

@@ -9,7 +9,7 @@ namespace ZeroORM.Test.QueryExtensionsTests
 
 		[Fact]
 		public void RawSqlReturnsItsParameter()
-			=> ( null as SqlBuilder )
+			=> ( null as ISqlBuilder )
 			.RawSql( _testString )
 			.Should()
 			.BeSameAs( _testString );

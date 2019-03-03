@@ -1,9 +1,6 @@
-﻿using ZeroORM.Extensibility.Metadata;
-
-namespace ZeroORM
+﻿namespace ZeroORM
 {
-	internal interface ISqlBuilder
+	public interface ISqlBuilder
 	{
-		IMetadataProvider Metadata { get; }
 	}
 }
