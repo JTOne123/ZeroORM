@@ -1,0 +1,4 @@
+[bugtraq "github"]
+ url = https://github.com/bessgeor/ZeroORM/issues/%BUGID%
+ loglinkregex = issue::\\d+.
+ logregex = issue::(\\d+).
