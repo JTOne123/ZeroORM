@@ -29,7 +29,7 @@ namespace ZeroORMExample
 			.ZeroORM()
 			.UseTable<ExampleEntityType>(out var exampleEntities)
 			.Script()
-			.RawSql(@$"
+			.RawSql($@"
 SELECT ""{exampleEntities.GetColumnName(e => e.Id)}""
 FROM ""{exampleEntities.TableName}""
 ORDER BY ""{exampleEntities.GetColumnName(e => e.CreatedAt)}"" DESC
