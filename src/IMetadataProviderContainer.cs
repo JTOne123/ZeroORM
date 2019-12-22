@@ -2,7 +2,7 @@
 
 namespace ZeroORM
 {
-	internal interface IMetadataProviderContainer
+	public interface IMetadataProviderContainer
 	{
 		IMetadataProvider Metadata { get; }
 	}
