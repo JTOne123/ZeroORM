@@ -6,7 +6,7 @@ namespace ZeroORM
 	{
 		public static ISqlBuilder UseTable<TEntity>( this ISqlBuilder builder, out ITableMetadata<TEntity> table )
 		{
-			table = ( (IInternalSqlBuilder) builder ).Metadata.GetTable<TEntity>();
+			table = ( (IMetadataProviderContainer) builder ).Metadata.GetTable<TEntity>();
 			return builder;
 		}
 	}
