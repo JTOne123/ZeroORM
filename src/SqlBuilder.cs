@@ -2,7 +2,7 @@
 
 namespace ZeroORM
 {
-	internal sealed class SqlBuilder : ISqlBuilder, IMetadataProviderContainer
+	internal sealed class SqlBuilder : IScriptBuilder, IMetadataProviderContainer
 	{
 		private readonly IMetadataProvider _metadata;
 

@@ -4,7 +4,7 @@ namespace ZeroORM
 {
 	public static class SqlBuilderFactory
 	{
-		public static ISqlBuilder Script( this IMetadataProvider metadata )
+		public static IScriptBuilder Script( this IMetadataProvider metadata )
 			=> new SqlBuilder( metadata );
 	}
 }
